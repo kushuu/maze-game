@@ -9,13 +9,13 @@ first.title("happy buddeyy :)")
 first.geometry("600x400")
 c = Canvas(first, bg="pink", height=2000, width=1000)
 c.pack()
-Label(first, text="Sooo, here are the rules for the game:\n- Move the yellow dot on the screen to clear the game.\n- Blue dots give you cookie points :D\n- Get ready for a littleee message in the end :)\n\n\nClose this window to start the game :)\nenjoiii~",font=("bold", 15), bg="pink").place(x=35, y=85)
+Label(first, text="Sooo, here are the rules for the game:\n- Move the yellow dot on the screen to clear the game.\n- Blue dots give you cookie points :D\n(just wait for a while after reaching the blue point, it slow ;_;)\n- Get ready for a littleee message in the end :)\n\n\nClose this window to start the game :)\nenjoiii~",font=("bold", 15), bg="pink").place(x=35, y=85)
 first.mainloop()
 
 wn = turtle.Screen()
-wn.title("happy buddeeyyyy mere bhai <3")
+wn.title("happy buddeeyyyy pareshan aatma <3")
 wn.setup(700, 700)
-wn.bgcolor("#008080")
+wn.bgcolor("#008160")
 
 #create pen
 class Pen(turtle.Turtle):
@@ -79,13 +79,23 @@ class Player(turtle.Turtle):
         print(self.score)
     if (move_to_x, move_to_y) == (264.00, -312.00):
         turtle.bye()
+
         main = Tk()
         main.title("happy buddeyy :)")
-        main.geometry("300x300")
+        main.geometry("800x300")
         c = Canvas(main, bg="pink", height=2000, width=1000)
         c.pack()
-        Label(main, text="Your final score = " + str(self.score) + "\n\n\nbas hogya ab ek saal ke liye\nok byeeee\n\n\n\n\t   happy birthday :p", font=("bold", 15), bg="pink").place(x=35, y=85)
+        Label(main, text="Your final score = " + str(self.score) + "\n\n\nNow do what you want to do with this information lmaoooo\nok byeeee\n\n\n\n\t\t\t\t      happy belated birthday :p\n\t\t\t\t      and happy raksha bandhan :))", font=("bold", 15), bg="pink").place(x=105, y=65)
         main.mainloop()
+
+        second = Tk()
+        second.title("lol last")
+        second.geometry("300x300")
+        c = Canvas(second, bg="#008160", height=2000, width=1000)
+        c.pack()
+        Label(second, text="take careee <33", font=("bold", 15), bg="#008160").place(x=105, y=65)
+        second.mainloop()
+
 
   def go_right(self):
     move_to_x = player.xcor() + 24
