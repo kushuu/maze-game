@@ -1,5 +1,6 @@
 # Get started with interactive Python
 import turtle
+from playsound import playsound
 from tkinter import *
 
 #making the instructions page
@@ -52,6 +53,8 @@ class Player(turtle.Turtle):
         self.goto(move_to_x, move_to_y)
     if (move_to_x, move_to_y) in fruits:
         self.score += 10
+        fil = "coin_sound.mp3"
+        playsound(fil)
         print(self.score)
     if (move_to_x, move_to_y) == (264.00, -312.00):
         turtle.bye()
@@ -71,6 +74,8 @@ class Player(turtle.Turtle):
         self.goto(move_to_x, move_to_y)
     if (move_to_x, move_to_y) in fruits:
         self.score += 10
+        fil = "coin_sound.mp3"
+        playsound(fil)
         print(self.score)
     if (move_to_x, move_to_y) == (264.00, -312.00):
         turtle.bye()
@@ -90,6 +95,8 @@ class Player(turtle.Turtle):
         self.goto(move_to_x, move_to_y)
     if (move_to_x, move_to_y) in fruits:
         self.score += 10
+        fil = "coin_sound.mp3"
+        playsound(fil)
         print(self.score)
     if (move_to_x, move_to_y) == (264.00, -312.00):
         turtle.bye()
@@ -109,6 +116,8 @@ class Player(turtle.Turtle):
         self.goto(move_to_x, move_to_y)
     if (move_to_x, move_to_y) in fruits:
         self.score += 10
+        fil = "coin_sound.mp3"
+        playsound(fil)
         print(self.score)
     if (move_to_x, move_to_y) == (264.00, -312.00):
         turtle.bye()
